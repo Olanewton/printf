@@ -32,7 +32,7 @@ int print_rev(va_list ap, params_t *params)
 {
 	int len, sum = 0;
 	char *str = va_arg(ap, char *);
-	(void)params
+	(void)params;
 
 	if (str)
 	{
@@ -42,6 +42,7 @@ int print_rev(va_list ap, params_t *params)
 		for (; len > 0; len--, str--)
 			sum += _putchar(*str);
 	}
+
 	return (sum);
 }
 
